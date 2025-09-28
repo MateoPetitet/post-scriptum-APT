@@ -39,7 +39,6 @@ def ajout_ps():
     try:
         with open(fichier_entree, 'r', encoding='utf-8') as entree, \
              open(fichier_sortie, 'w', encoding='utf-8') as sortie:
-            
             for numero_ligne, ligne in enumerate(entree):
                 nb_p = numero_ligne + 1 + decalage
                 prefixe = "P" * nb_p + "S :"
